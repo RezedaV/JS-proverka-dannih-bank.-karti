@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаг 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="step1">
+        <h1 class="step1_name">Заполните данные карты</h1>
+        <div class="form_card">
+            <label class="form_label_card" for="form_card_input">Номер карты</label>
+            <input
+                    maxlength = "16"
+                    minlength="16"
+                    id="form_card_input"
+                    type="text"
+                    class="form_card_input"
+                    name="form_card_input"
+                    placeholder="0000 0000 0000 0000"
+                    pattern=".{16,}"
+                    required>
+            <div class="error_card_text">Внимание! Номер карты вводится цифрами!</div>
+        </div>
+        <div class="form_block">
+            <div class="form_card_date">
+                <label class="form_label_card_date" for="form_card_date_input">Срок действия</label>
+                <form action="" id="form_card_date_input"  class="form_card_date_input">
+                    <input
+                            class="month_input"
+                            id="expiry_month"
+                            type="text"
+                            maxlength = "2"
+                            placeholder="мм"
+                            required>
+                    <span>/</span>
+                    <input
+                            class="year_input"
+                            id="expiry_year"
+                            type="text"
+                            maxlength = "4"
+                            placeholder="гггг"
+                            required>
+                </form>
+                <div class="error_date_text">ввод цифрами!</div>
+            </div>
+            <div class="form_card_CVV">
+                <label class="form_label_card_CVV" for="form_card_CVV_input">CVV</label>
+                <input
+                        type="password"
+                        minlength="3"
+                        maxlength = "3"
+                        id="form_card_CVV_input"
+                        class="form_card_CVV_input"
+                        name="form_card_CVV_input"
+                        placeholder="***"
+                        pattern=".{3,}"
+                        required>
+                <div class="error_CVV_text">ввод цифрами!</div>
+            </div>
+        </div>
+        <div disabled="true" class="ccValidator" ></div>
+        <button type="submit" value="Далее"  class="step1_button step2_button" onclick="testStep2()" >Далее</button>
+        <div class="error_text">Заполните все поля!</div>
+        <div class="right_text">Отлично!</div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+<script src="script.js" ></script>
+</body>
+</html>

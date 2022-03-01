@@ -1,0 +1,424 @@
+/*Обнуление стилей*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+html,
+body{
+    font-family: sans-serif;
+    height: 100%;
+
+
+}
+/*----------------------------------------------------------------------*/
+
+.wrapper{
+    min-height: 100%;
+    max-width:1800vh;
+    background: #EEF2F3;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16), 0px 2px 10px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0 0px 0;
+}
+
+.step1{
+    max-width:1140px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 46px 281px 46px 281px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+.step1_name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    color: #DC0533;
+    margin-bottom: 78px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.form_fio{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+    --field-padding: 12px 20px 12px 20px;
+}
+
+.form_label_fio{
+    margin-bottom: -8px;
+    z-index: 10;
+    background-color: white;
+    width: 150px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #495057;
+    margin-left: 24px;
+    padding-left: 2px;
+
+}
+
+.form_fio_input{
+    width: 578px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 130px;
+    outline: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #495057;
+    padding-left: 20px;
+}
+
+.form_address{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+    --field-padding: 12px 20px 12px 20px;
+}
+
+.form_label{
+    margin-bottom: -8px;
+    z-index: 10;
+    background-color: white;
+    width: 120px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #495057;
+    margin-left: 24px;
+    padding-left: 2px;
+
+}
+
+.form_address_input{
+    width: 578px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 130px;
+    outline: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #495057;
+    padding-left: 20px;
+}
+.suggestions-wrapper{
+    width: 578px;
+}
+
+.step1_button{
+    width: 180px;
+    height: 40px;
+    background: rgba(69, 103, 142, 0.8);
+    border-radius: 130px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-left: 550px;
+    cursor: pointer;
+}
+
+.error_text{
+    color: #DC0533;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.right_text{
+    color: darkgreen;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.error_card_text,
+.error_CVV_text{
+    color: #DC0533;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.error_CVV_text{
+    color: #DC0533;
+    font-size: 15px;
+    display: none;
+    z-index: 5;
+}
+.error_date_text{
+    color: #DC0533;
+    font-size: 15px;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+/*---step2--------------------------------------------------------*/
+
+
+.form_card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    --field-padding: 12px 20px 12px 20px;
+}
+
+.form_label_card{
+    margin-bottom: -8px;
+    z-index: 10;
+    background-color: white;
+    width: 83px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #495057;
+    margin-left: 24px;
+    padding-left: 2px;
+
+}
+
+.form_card_input{
+    width: 325px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 130px;
+    outline: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #495057;
+    text-align: center;
+}
+
+
+.form_block{
+    display: flex;
+    width: 325px;
+    justify-content: space-between;
+}
+
+.form_card_date,
+.form_card_CVV{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 96px;
+    --field-padding: 12px 20px 12px 20px;
+}
+
+.form_label_card_date,
+.form_label_card_CVV{
+    margin-bottom: -8px;
+    z-index: 10;
+    background-color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #495057;
+    margin-left: 24px;
+    padding-left: 2px;
+
+}
+.form_label_card_date{
+    width: 92px;
+}
+.form_label_card_CVV{
+    width: 30px;
+}
+
+.form_card_input{
+    border: 1px solid #CED4DA;
+}
+
+.form_card_date_input,
+.form_card_CVV_input{
+    width: 138px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 130px;
+    outline: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #495057;
+    text-align: center;
+}
+.form_card_CVV_input{
+    padding-top: 5px;
+}
+.form_card_date_input{
+    justify-content: center;
+}
+.month_input,
+.year_input{
+    height: 30px;
+    width: 40px;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #495057;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+/*---адаптив--------------------------------------------------------*/
+
+
+@media (max-width: 1250px)  {
+    .wrapper{
+        max-width:1250vh;
+        padding: 30px 0 30px 0;
+    }
+    .step1{
+        padding: 46px 100px 46px 100px;
+    }
+    .step1_name{
+        margin-bottom: 50px;
+    }
+    .form_address{
+        margin-bottom: 40px;
+    }
+    .form_fio{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 960px)  {
+    .wrapper{
+        max-width:960vh;
+        padding: 50px 0 50px 0;
+    }
+    .step1{
+        padding: 36px 20px 26px 20px;
+    }
+    .step1_button{
+        margin-left: 0px;
+    }
+    .form_address_input{
+        width: 350px;
+    }
+    .form_fio_input{
+        width: 350px;
+    }
+    .suggestions-wrapper{
+        width: 350px;
+    }
+
+    .step1_name{
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+    .form_address{
+        margin-bottom: 30px;
+    }
+    .form_fio{
+        margin-bottom: 30px;
+    }
+    .form_card_input{
+        width: 300px;
+    }
+    .form_block{
+        width: 300px;
+    }
+}
+
+@media (max-width: 425px){
+    .wrapper{
+        max-width:425vh;
+        background-color: #FFFFFF;
+        padding: 0px 0 0px 0;
+    }
+    .form_address_input{
+        width: 280px;
+    }
+    .form_fio_input{
+        width: 280px;
+    }
+    .suggestions-wrapper{
+        width: 280px;
+    }
+    .step1_name{
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .wrapper{
+        max-width: 320px;
+        align-items: flex-start;
+    }
+    .step1_name{
+        font-size: 26px;
+    }
+}

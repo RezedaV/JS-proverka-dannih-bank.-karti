@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаг 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="step1">
+        <h1 class="step1_name">Заполните данные клиента</h1>
+        <div class="form_fio">
+            <label class="form_label_fio" for="form_fio_input">Фамилия, имя, отчество</label>
+            <input
+                    id="form_fio_input"
+                    type="text"
+                    class="form_fio_input"
+                    name="form_fio_input"
+                    placeholder="Фамилия, имя, отчество"
+                    required>
+        </div>
+        <div class="form_address">
+            <label class="form_label" for="form_address_input">Адрес регистрации</label>
+            <input
+                    id="form_address_input"
+                    type="text"
+                    class="form_address_input"
+                    name="form_address_input"
+                    placeholder="Адрес регистрации"
+                    required>
+        </div>
+        <button type="submit" value="Далее" onclick="testStep1()" class="step1_button">Далее</button>
+        <div class="error_text">Заполните все поля!</div>
+        <div class="right_text">Отлично!</div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+<script src="script.js" ></script>
+</body>
+</html>
